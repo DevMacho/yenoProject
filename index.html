@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>익명 고민함</title>
+		<script defer src="app.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<h1>💌익명 고민함</h1>
+		<h4>익명으로 우리반에 대한 고민을 털어놓아보세요!</h4>
+		<div class="lists">
+			<h2>우리반의 고민들</h2>
+			<div class="inner">
+				<p id="text">우리 회장 일 안한다!!</p>
+				<div class="btns">
+					<button id="previous" onclick="goPrevious()"><</button>
+					<button id="next" onclick="goNext()">></button>
+				</div>
+			</div>
+		</div>
+		<div class="request">
+			<h2>고민 우편함</h2>
+			<form id="form">
+				<input id="inputValue" type="text" placeholder="고민을 적어주세요!" required />
+				<input id="submit" type="submit" />
+			</form>
+		</div>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	</body>
+</html>
