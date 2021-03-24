@@ -10,6 +10,7 @@ function goNext(){
    if(checker == lists.length-1){
       checker = 0;
       text.innerText = lists[checker];
+      return;
    }
    checker++;
    text.innerText = lists[checker];
@@ -20,6 +21,7 @@ function goPrevious(){
    if(checker == 0){
       checker = lists.length;
       text.innerText = lists[checker];
+      return;
    }
    checker--;
    text.innerText = lists[checker];
